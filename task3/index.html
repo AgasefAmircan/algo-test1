@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     gap: 20px;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: #171823;
+        flex-direction: column;
+    }
+    .msgs {
+      font-weight: 900;
+      font-size: 30px;
+    }
+    .text,
+    .name {
+      margin-bottom: 25px;
+      outline: none;
+    }
+    .messages {
+      border: 1px solid black;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="content">
+        <input type="text" class="text" placeholder="Add some messages" />
+        <input type="text" class="name" placeholder="Add your name" />
+        <button>Send</button>
+      </div>
+      <div class="messages">
+        <p class="msgs">Messages : <p class="mesag"></p></p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
