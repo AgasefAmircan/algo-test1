@@ -34,12 +34,10 @@ let messenger=new Messenger()
 const text=document.querySelector('.text')
 const name=document.querySelector('.name')
 const btn=document.querySelector('button')
-const mesag=document.querySelector('.mesag')
 
 btn.addEventListener('click',()=>{
-   const x= messenger.send(text.value,name.value)
-    const y =messenger.showHistory();
-    mesag.innerHTML=x+y
+    messenger.send(text.value,name.value)
+    messenger.showHistory();
     text.value=''
     name.value=''
 })
